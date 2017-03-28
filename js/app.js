@@ -1,5 +1,7 @@
 var app = angular.module('VerticeApp', ['ngRoute']);
 
+angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
         .when("/", {
@@ -24,8 +26,9 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         tab : "registro"
     })
         .when("/About", {
-        templateUrl : "About.html"
-    });
+        templateUrl : "/About.html"
+    })
+    .otherwise("/");
     $locationProvider.html5Mode(true);
 }]);
 
@@ -44,8 +47,9 @@ app.controller('dateController', function() {
     });
 });
 
-app.controller('navController', function($scope,$route) {
+app.controller('navController', function($scope,$route,$location) {
     $scope.$route = $route;
+    $scope.$location = $location;
 });
 
 app.controller('TabController', function() {

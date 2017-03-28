@@ -682,7 +682,6 @@ ul li {
 }
 .countdown {
     text-align: center;
-    width: 60%;
     margin: 0 auto;
     font-weight: 700;
 }
@@ -737,3 +736,16 @@ ul li {
     .countdown-timer-title {
         font-size: 48px;
     }
+}
+@media only screen and (min-width: 768px) {
+
+    .img-flyer{
+        position: relative;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+}
+
+.img-responsive {
+    min-width: 100%;
+}
