@@ -41,8 +41,8 @@
                     <ul class="nav navbar-nav navbar-right">
 
                         <!-- navigation menu -->
-                        <li ><a href="/">Inicio</a></li>
-                        <li ><a href="/Arquitectura">Arquitectura</a></li>
+                        <li ><a ui-sref="/">Inicio</a></li>
+                        <li ><a ui-sref="Arquitectura">Arquitectura</a></li>
                         <li ><a href="/Bioingenieria">Bioingenieria</a></li>
                         <li ><a href="/Civil">Ing. Civil</a></li>
                         <li ><a href="/Industrial">Ing. Industrial</a></li>
@@ -53,7 +53,7 @@
 
             <!-- Contenidos de la pagina, mostrados mediante Angular -->
 
-            <ng-view></ng-view>
+            <ui-view></ui-view>
 
 
             </div><!-- /.container -->
@@ -79,6 +79,7 @@
         <script src="js/jquery.countdown.min.js"></script>
         <script src="js/angular.min.js"></script>
         <script src="js/angular-route.min.js"></script>
+        <script src="js/angular-ui-router.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/main.js"></script>
