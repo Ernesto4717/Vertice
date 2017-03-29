@@ -1,35 +1,31 @@
 var app = angular.module('VerticeApp', ['ngRoute']);
 
-angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
-
-app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when("/", {
-        templateUrl : "home.html",
+        templateUrl : "pages/home.html",
         controller : "dateController",
         controllerAs : "date"
     })
         .when("/Arquitectura", {
-        templateUrl : "Arquitectura.html"
+        templateUrl : "pages/Arquitectura.html"
     })
         .when("/Bioingenieria", {
-        templateUrl : "Bioingenieria.html"
+        templateUrl : "pages/Bioingenieria.html"
     })
         .when("/Civil", {
-        templateUrl : "Civil.html"
+        templateUrl : "pages/Civil.html"
     })
         .when("/Industrial", {
-        templateUrl : "Industrial.html"
+        templateUrl : "pages/Industrial.html"
     })
         .when("/Registro", {
-        templateUrl : "Registro.html",
+        templateUrl : "pages/Registro.html",
         tab : "registro"
     })
         .when("/About", {
-        templateUrl : "/About.html"
-    })
-    .otherwise("/");
-    $locationProvider.html5Mode(true);
+        templateUrl : "pages/About.html"
+    });
 }]);
 
 app.controller('dateController', function() {
@@ -47,9 +43,7 @@ app.controller('dateController', function() {
     });
 });
 
-app.controller('navController', function($scope,$route,$location) {
-    $scope.$route = $route;
-    $scope.$location = $location;
+app.controller('navController', function() {
 });
 
 app.controller('TabController', function() {
