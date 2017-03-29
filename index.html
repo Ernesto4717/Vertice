@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <base href="/">
         <title>Congreso Internacional Vertice</title>
 
         <!-- css -->
@@ -41,8 +41,8 @@
                     <ul class="nav navbar-nav navbar-right">
 
                         <!-- navigation menu -->
-                        <li ><a ui-sref="/">Inicio</a></li>
-                        <li ><a ui-sref="Arquitectura">Arquitectura</a></li>
+                        <li ><a href="/">Inicio</a></li>
+                        <li ><a href="/Arquitectura">Arquitectura</a></li>
                         <li ><a href="/Bioingenieria">Bioingenieria</a></li>
                         <li ><a href="/Civil">Ing. Civil</a></li>
                         <li ><a href="/Industrial">Ing. Industrial</a></li>
@@ -53,8 +53,7 @@
 
             <!-- Contenidos de la pagina, mostrados mediante Angular -->
 
-            <ui-view></ui-view>
-
+            <ng-view></ng-view>
 
             </div><!-- /.container -->
         <!-- footer -->
@@ -79,7 +78,6 @@
         <script src="js/jquery.countdown.min.js"></script>
         <script src="js/angular.min.js"></script>
         <script src="js/angular-route.min.js"></script>
-        <script src="js/angular-ui-router.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/main.js"></script>
