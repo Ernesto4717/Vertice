@@ -12,7 +12,7 @@ html {
 
 body {
     color: #4e4e4e;
-    background-color: rgb(223,213,6);
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -689,6 +689,11 @@ ul li {
     font-weight: 700;
 }
 .countdown >h1 {
+    margin-top: 0px;
+    padding-bottom: 1em;
+}
+.countdown >h1>a {
+    color: #fff200;
     margin-top: 0px;
     padding-bottom: 1em;
 }
