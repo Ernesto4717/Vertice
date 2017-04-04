@@ -694,6 +694,7 @@ ul li {
 }
 .links {
     text-align: center;
+    background-color: rgb(223,213,6);
 }
 #countdown-timer >span {
     display: inline-block;
@@ -760,3 +761,7 @@ ul li {
     }
 }
 
+.info {
+    position: relative;
+    background-color: #fff;
+}
