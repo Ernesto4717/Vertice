@@ -24,8 +24,25 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
     })
         .when("/About", {
         templateUrl : "/About.html"
+    })
+        .when("/Ponencias", {
+        templateUrl : "/Ponencias.html"
+    })
+        .when("/Magistrales", {
+        templateUrl : "/Magistrales.html"
+    })
+        .when("/Conferencias/Bioingenieria", {
+        templateUrl : "/Conferencias/Bioingenieria.html"
+    })
+        .when("/Conferencias/Civil", {
+        templateUrl : "/Conferencias/Civil.html"
+    })
+        .when("/Conferencias/Industrial", {
+        templateUrl : "/Conferencias/Industrial.html"
+    })
+        .when("/Conferencias/Arquitectura", {
+        templateUrl : "/Conferencias/Arqui.html"
     });
-    $locationProvider.html5Mode(true);
 }]);
 app.controller('dateController', function() {
     $('#countdown-timer').countdown('2017/4/26 10:30:00', function(event) {
