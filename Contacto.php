@@ -10,12 +10,13 @@ $correo=$_POST["email"];
 
 $contenido=$_POST["message"];
 
-$para="ivan_r.h@hotmail.com";
+$para="informacion.vertice@uabc.edu.mx";
 
 
 $mensaje="
 
 Nombre del remitente:".$nombre."
+Apellido del remitente:".$apellido."
 E-mail:".$correo."
 Mensaje:".$contenido."
 ";
