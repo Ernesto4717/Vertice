@@ -23,5 +23,5 @@ Mensaje:".$contenido."
 mail($para,$asunto,utf8_decode($mensaje));
 
 
-header('Location: Contacto.html');
+header('Location: /#!/Contacto');
 ?>
