@@ -25,6 +25,9 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when("/About", {
         templateUrl : "/About.html"
     })
+        .when("/Contacto", {
+        templateUrl : "/Contacto.html"
+    })
         .when("/Ponencias", {
         templateUrl : "/Ponencias.html"
     })

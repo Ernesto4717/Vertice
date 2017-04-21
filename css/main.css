@@ -92,10 +92,24 @@ ul li {
     box-shadow: none;
     height: 48px;
     padding: 10px 12px;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.6;
 }
 .form-control:focus {
+    box-shadow: none;
+    border-color: #ccc;
+    background-color: #f8f8f8;
+}
+.form-control2 {
+    border-radius: 0;
+    box-shadow: none;
+    height: 232px;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 24px;
+    line-height: 1.6;
+}
+.form-control2:focus {
     box-shadow: none;
     border-color: #ccc;
     background-color: #f8f8f8;
