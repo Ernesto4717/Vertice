@@ -637,3 +637,8 @@ ul li {
         min-width: 0%;
     }
 }
+
+
+#myCarousel .item > img {
+    margin: auto
+}
