@@ -45,6 +45,9 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
     })
         .when("/Conferencias/Arquitectura", {
         templateUrl : "/Conferencias/Arqui.html"
+    })
+        .when("/Talleres/Bioingenieria", {
+        templateUrl : "/Talleres/Bioingenieria.html"
     });
 }]);
 app.controller('dateController', function() {
