@@ -1,4 +1,4 @@
- @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -650,9 +650,15 @@ ul li {
         margin-left: 12.5%;
         min-width: 0%;
     }
+    #bio {
+        margin: auto;
+        width: 70%;
+    }
 }
 
 
 #myCarousel .item > img {
-    margin: auto
+    margin: auto;
 }
+
+
